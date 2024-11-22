@@ -1,0 +1,1199 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1192,12309.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="a" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="530.6666666666666,12286.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="Choice" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="496.6666666666667,329.3333333333333" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter your choice" OptionsString="Pongal;Diwali;Christmas" Title="This is input">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Choice]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Choice]" sap:VirtualizedContainerService.HintSize="496.6666666666667,11874.666666666666" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+        <Switch.Default>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Give a valid input&quot;]" />
+        </Switch.Default>
+        <uix:NApplicationCard x:Key="Pongal" AttachMode="ByInstance" DisplayName="Chrome Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="450,3824.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="61a493aa-fe91-40cd-957f-704d18451768" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,3566" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4efdd64e-5c6e-4191-b763-9afc0ff2a832" InformativeScreenshot="3deba8dbe278035f39bdf262b5566b14" Selector="&lt;webctrl parentid='nav-hamburger-menu' tag='I' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:void(0)'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35739809-be58-4acb-8844-841eb7f4a755" InformativeScreenshot="3a190c3d9b5a26c09f14404f0823c6ef" Selector="&lt;webctrl aaname='Sign in' class='hmenu-item' parentid='hmenu-content' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Email or mobile phone n…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,289.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" Text="9345776153" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/ap/signin" CVScreenId="c58d1c0e-1f1a-43cf-a826-f253a6f493a8" ContentHash="xxLIrtot40KA_t0i9v0T2g" CvElementArea="256, 357, 449, 52" CvType="InputBox" DesignTimeRectangle="259, 360, 445, 47" DesignTimeScaleFactor="1.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ap_email' tag='INPUT' type='email' class='a-input-text a-span12 auth-autofocus auth-required-field auth-require-claim-validation' aaname='               Email or mobile phone number             ' /&gt;" Guid="121de20e-90b9-4eb4-b0af-0db370b53d49" InformativeScreenshot="4b76ba63624ac7a3767ef924c5ad687b.png" IsResponsive="True" Reference="pN9ec2FstECmmZwUooDDWw/KlCY7UxgpkWHPUdPr1GLbg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="c58d1c0e-1f1a-43cf-a826-f253a6f493a8" CvTextArea="261, 331, 288, 21" CvTextArgument="Email or mobile phone number" CvType="Text" DesignTimeRectangle="259, 329, 445, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='a-form-label' aaname='               Email or mobile phone number             ' check:innerText='Email or mobile phone number' /&gt;" Guid="74befdca-5d1c-4285-901a-5722ea6b7795" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  continue'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5b6f08c6-a8a9-4357-90dc-f0f9290f2751" InformativeScreenshot="8899181f436c2f574f939ad15c0a5fb4" Selector="&lt;webctrl id='continue' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  ap_password'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_16" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="898df825-3c4c-48cb-92dc-3418bc57f84c" InformativeScreenshot="4d96127f1ed1cdcfcc28f1bac077c46e" Selector="&lt;webctrl id='ap_password' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  ap_password'" sap:VirtualizedContainerService.HintSize="382,188.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="Kavin@200424">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1edec68a-bd5a-42b4-b5cb-5ed5928c1dc2" InformativeScreenshot="485b4490041382c0ed8674af9799592d" Selector="&lt;webctrl id='ap_password' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  ap_email'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d45a625c-f065-47bc-b08a-0c0e14ece6c0" InformativeScreenshot="4e9b4f6c9a6308dfb5722afda2eff776" Selector="&lt;webctrl id='signInSubmit' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT signInSubmit'" sap:VirtualizedContainerService.HintSize="382,228" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/ap/signin" CVScreenId="9f5260dd-a671-4b60-bfd5-d08088fb08f3" ContentHash="dXLTeSzvj064gKUx4YzoPg" CvElementArea="734, 618, 449, 50" CvTextArea="927, 632, 63, 24" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="737, 621, 443, 43" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='signInSubmit' tag='INPUT' type='submit' class='a-button-input' aaname='' /&gt;" Guid="b7e64e4a-9074-4e26-9841-b53ebeed0acf" InformativeScreenshot="9799d179321650635a288aa34eb57e25.png" Reference="pN9ec2FstECmmZwUooDDWw/NdCeUVbTW0i44zyV3KC-tQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  twotabsearchtext...'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5969098-15f2-4535-bd34-4495e83cb98b" InformativeScreenshot="1a71b433e62bcd07b7bc48e7809d4cba" Selector="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  twotabsearchtext...'" sap:VirtualizedContainerService.HintSize="382,188.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="Casual shirts for men">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d445431e-5b08-4c79-9308-d803b18201e8" InformativeScreenshot="88da1d1abfb4e150ba9336802d265827" Selector="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="382,170.66666666666666" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="Ctrl" SpecialKey="True">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="181d4836-ac78-4ceb-a7e1-4fed30addb40">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,178" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;login successful&quot;]" />
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9505f9fb-2f1b-4b1f-a9df-4ef75ebe026c" InformativeScreenshot="f4411209b948fcbd104711cd823989d1" Selector="&lt;webctrl parentid='search' tag='IMG' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_21" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="89823413-11a6-4cbf-984d-fa91d2878494" InformativeScreenshot="538f38080f1360c3ba1d3930e7cc15d8" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;span' parentid='dropdown_selected_size_name' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  native_dropdown_sele...'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_22" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f149718-37e0-40c3-a22d-756b82ff2453" InformativeScreenshot="ffeab2d62e600f5fa548f60f6b1cb9ab" Selector="&lt;webctrl id='native_dropdown_selected_size_name_4' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,178" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;shirt was selected&quot;]" />
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  add-to-cart-butt...'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_20" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7017f7bf-30e0-4e78-906b-efcf6483cef3" InformativeScreenshot="936d5b70da6345e2a91dfb7aabe7f61f" Selector="&lt;webctrl id='add-to-cart-button' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_23" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="993c5fe2-6b3a-40a4-98c9-1537f4bcaaa9" InformativeScreenshot="f052847d1d79b106364ff28f71b5b1b6" Selector="&lt;webctrl aria-labelledby='sc-buy-box-ptc-button-announce' tag='INPUT' type='submit' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <uix:NGetText DisplayName="Get Text 'P.when(client-side-met…'" sap:VirtualizedContainerService.HintSize="382,190.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" TextString="[a]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/gp/buy/kyc/xborder/handlers/display.html" ContentHash="3MLLZGXP7EGTdwYQT3YqPg" DesignTimeRectangle="96, 231, 1725, 1665" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl type='' parentid='a-page' tag='DIV' class='a-container page-container' aaname='            ' /&gt;" Guid="72f0965b-4f29-407a-a799-a85947f80e55" InformativeScreenshot="7853516f8958e5f0bf42d324cefd0de7.png" Reference="pN9ec2FstECmmZwUooDDWw/uUkKDuziykOJ4JfQ4sNd1Q" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01e5ncglxyL.css,01lF2n-pPaL.css,519YvOBDG8L.css,31uBZQYbDJL.css,01e7yyFT0mL.css,11hEAfyy4tL.css,01qPl4hxayL.css,01pOTCa2wPL.css,413Vvv3GONL.css,11TIuySqr6L.css,01Rw4F+QU6L.css,11JJsNcqOIL.css,01J3raiFJr*' title='Amazon.com Checkout' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,178" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;move out of cart&quot;]" />
+                <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Your Pongal shopping list is moved to the cart.Please place your order" DisplayName="Send SMTP Mail Message" Email="220701122@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382,180.66666666666666" sap2010:WorkflowViewState.IdRef="SendMail_4" IgnoreCRL="False" IsBodyHtml="False" Password="fdxb pzwb vlmo zuww" Port="587" SecureConnection="Auto" Server="Smtp.gmail.com" Subject="Your Pongal shopping list is moved to the cart" To="220701122@rajalakshmi.edu.in">
+                  <ui:SendMail.Files>
+                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                  </ui:SendMail.Files>
+                </ui:SendMail>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="_UrIh6TTUk2jVw7zLbjm7w" IconBase64="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" InformativeScreenshot="17d1896579d08e6a4e91664082cc2537.jpg" Reference="pN9ec2FstECmmZwUooDDWw/A2IsXlRlIkGCbFHPbUtRWg" Selector="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" Title="Amazon.com. Spend less. Smile more." Url="https://www.amazon.com/" Version="V1" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+        <uix:NApplicationCard x:Key="Diwali" AttachMode="ByInstance" DisplayName="Chrome Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="450,3784.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" ScopeGuid="61a493aa-fe91-40cd-957f-704d18451768" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,3566" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_30" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4efdd64e-5c6e-4191-b763-9afc0ff2a832" InformativeScreenshot="3deba8dbe278035f39bdf262b5566b14" Selector="&lt;webctrl parentid='nav-hamburger-menu' tag='I' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:void(0)'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_31" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35739809-be58-4acb-8844-841eb7f4a755" InformativeScreenshot="3a190c3d9b5a26c09f14404f0823c6ef" Selector="&lt;webctrl aaname='Sign in' class='hmenu-item' parentid='hmenu-content' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Email or mobile phone n…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,289.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" Text="9345776153" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/ap/signin" CVScreenId="c58d1c0e-1f1a-43cf-a826-f253a6f493a8" ContentHash="xxLIrtot40KA_t0i9v0T2g" CvElementArea="256, 357, 449, 52" CvType="InputBox" DesignTimeRectangle="259, 360, 445, 47" DesignTimeScaleFactor="1.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ap_email' tag='INPUT' type='email' class='a-input-text a-span12 auth-autofocus auth-required-field auth-require-claim-validation' aaname='               Email or mobile phone number             ' /&gt;" Guid="121de20e-90b9-4eb4-b0af-0db370b53d49" InformativeScreenshot="4b76ba63624ac7a3767ef924c5ad687b.png" IsResponsive="True" Reference="pN9ec2FstECmmZwUooDDWw/KlCY7UxgpkWHPUdPr1GLbg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="c58d1c0e-1f1a-43cf-a826-f253a6f493a8" CvTextArea="261, 331, 288, 21" CvTextArgument="Email or mobile phone number" CvType="Text" DesignTimeRectangle="259, 329, 445, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='a-form-label' aaname='               Email or mobile phone number             ' check:innerText='Email or mobile phone number' /&gt;" Guid="74befdca-5d1c-4285-901a-5722ea6b7795" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  continue'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_32" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5b6f08c6-a8a9-4357-90dc-f0f9290f2751" InformativeScreenshot="8899181f436c2f574f939ad15c0a5fb4" Selector="&lt;webctrl id='continue' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  ap_password'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_33" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="898df825-3c4c-48cb-92dc-3418bc57f84c" InformativeScreenshot="4d96127f1ed1cdcfcc28f1bac077c46e" Selector="&lt;webctrl id='ap_password' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  ap_password'" sap:VirtualizedContainerService.HintSize="382,188.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="Kavin@200424">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1edec68a-bd5a-42b4-b5cb-5ed5928c1dc2" InformativeScreenshot="485b4490041382c0ed8674af9799592d" Selector="&lt;webctrl id='ap_password' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  ap_email'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_34" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d45a625c-f065-47bc-b08a-0c0e14ece6c0" InformativeScreenshot="4e9b4f6c9a6308dfb5722afda2eff776" Selector="&lt;webctrl id='signInSubmit' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT signInSubmit'" sap:VirtualizedContainerService.HintSize="382,228" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/ap/signin" CVScreenId="9f5260dd-a671-4b60-bfd5-d08088fb08f3" ContentHash="dXLTeSzvj064gKUx4YzoPg" CvElementArea="734, 618, 449, 50" CvTextArea="927, 632, 63, 24" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="737, 621, 443, 43" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='signInSubmit' tag='INPUT' type='submit' class='a-button-input' aaname='' /&gt;" Guid="b7e64e4a-9074-4e26-9841-b53ebeed0acf" InformativeScreenshot="9799d179321650635a288aa34eb57e25.png" Reference="pN9ec2FstECmmZwUooDDWw/NdCeUVbTW0i44zyV3KC-tQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  twotabsearchtext...'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_35" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5969098-15f2-4535-bd34-4495e83cb98b" InformativeScreenshot="1a71b433e62bcd07b7bc48e7809d4cba" Selector="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  twotabsearchtext...'" sap:VirtualizedContainerService.HintSize="382,188.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="Blue Jean for men">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d445431e-5b08-4c79-9308-d803b18201e8" InformativeScreenshot="88da1d1abfb4e150ba9336802d265827" Selector="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="382,170.66666666666666" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="Ctrl" SpecialKey="True">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="181d4836-ac78-4ceb-a7e1-4fed30addb40">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,178" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;login successful&quot;]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,178" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;shirt was selected&quot;]" />
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_38" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1b5eb3f2-facb-47e8-be0b-26f5b23bcd9b" InformativeScreenshot="31479ebc8610e850ebee802617afdd67" Selector="&lt;webctrl parentid='search' tag='IMG' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_28" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8051c680-bc32-4166-a655-9b2f30da5d48" InformativeScreenshot="f457d13d1beaea16339af77ffa1fdc1c" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;span' parentid='dropdown_selected_size_name' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  native_dropdown_sele...'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_29" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1e95c691-22c2-41c3-8283-84c9890a5902" InformativeScreenshot="e2a7440f8d1cdd466df2a3ca0a0ddf1b" Selector="&lt;webctrl id='native_dropdown_selected_size_name_59' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  add-to-cart-butt...'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_36" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7017f7bf-30e0-4e78-906b-efcf6483cef3" InformativeScreenshot="936d5b70da6345e2a91dfb7aabe7f61f" Selector="&lt;webctrl id='add-to-cart-button' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_37" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="993c5fe2-6b3a-40a4-98c9-1537f4bcaaa9" InformativeScreenshot="f052847d1d79b106364ff28f71b5b1b6" Selector="&lt;webctrl aria-labelledby='sc-buy-box-ptc-button-announce' tag='INPUT' type='submit' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <uix:NGetText DisplayName="Get Text 'P.when(client-side-met…'" sap:VirtualizedContainerService.HintSize="382,190.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" TextString="[a]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/gp/buy/kyc/xborder/handlers/display.html" ContentHash="3MLLZGXP7EGTdwYQT3YqPg" DesignTimeRectangle="96, 231, 1725, 1665" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl type='' parentid='a-page' tag='DIV' class='a-container page-container' aaname='            ' /&gt;" Guid="72f0965b-4f29-407a-a799-a85947f80e55" InformativeScreenshot="7853516f8958e5f0bf42d324cefd0de7.png" Reference="pN9ec2FstECmmZwUooDDWw/uUkKDuziykOJ4JfQ4sNd1Q" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01e5ncglxyL.css,01lF2n-pPaL.css,519YvOBDG8L.css,31uBZQYbDJL.css,01e7yyFT0mL.css,11hEAfyy4tL.css,01qPl4hxayL.css,01pOTCa2wPL.css,413Vvv3GONL.css,11TIuySqr6L.css,01Rw4F+QU6L.css,11JJsNcqOIL.css,01J3raiFJr*' title='Amazon.com Checkout' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,178" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;move out of cart&quot;]" />
+                <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Your Diwali shopping list is moved to the cart.please place your order" DisplayName="Send SMTP Mail Message" Email="220701122@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382,180.66666666666666" sap2010:WorkflowViewState.IdRef="SendMail_3" IgnoreCRL="False" IsBodyHtml="False" Password="fdxb pzwb vlmo zuww" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Your Diwali shopping list was moved to the cart" To="220701122@rajalakshmi.edu.in">
+                  <ui:SendMail.Files>
+                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                  </ui:SendMail.Files>
+                </ui:SendMail>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="_UrIh6TTUk2jVw7zLbjm7w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAA13SURBVGhDvZcJUFRXFoYfggZXEBdwARtEZBUEFRTZRAFXyMwkYxaRVKqiqSRjJSYVJ4miZiyjUUFEcAFRcUncNWYxLp1JNIlGQ8xMonHUdgHUMdKIRtHGe+acu7x+jS1qljlVf/3nnvte3+/cd1/TaL9HtHVz9Rzr45XzdpBvXllEz62HB/WxnEyIsl4a0g8uDekPJxP7Wr8ZGG7ZGt3b/HYv37z0Tp5Z3d1bmLSWrTy0uIRsbeLkbVru/ONa3oo6rtx5x7QJr2zVYhPG8Wv+iCDoCb7ek7ZGBZkVqHBDnqLGQhdTYri+H54Iz778Kmu+qPyOVrwemlTBqpvaY9n5WjsPb7n0bwsCf83UNfc/CZE1l1JiGAdLjnZ0AkeRG2uk1U8+xtoUrHQO25QWlF7VIvtlSoxfF6+ZuiC4OhoERDtqh+O1pGimdvoC5heS+vJxVXIMTH7hJdCK1jkHfBAVrWPa8Eff0lxcXCTSgwWd1739wipoN7kIsJErUO4IeyE5WoquiYFF4592DvVrNDDpGYl2/3jcu+P4E4MjrTogQnFAHdQIK5UUDdWkxL6sOjGKbXg8C1wXr70bBJ9GsyXrUe/Znwy6C7or1eTY4R5SYfltLSRimES8d7zawydXwSowtbsEJzxKOM7RPIfHWnVSX+nRkPbmzLshFNjC1UKy5oINaYVr8Mzje2JoSr9Pib65morJfj65xt1VMGJnZZ6IkOhVCRKYcqyR+ByqIm2wUwDaZa1gNYzb8yU8s+9rzMvBjXYdmwl570PIP3ocOpVtEc00upeL3gcPzy4S1zEe9+4wvppDGY6DHAtQCShdQEdRIyIfHMmUz34mxykAPyLzV8Du8xdgf/V/+Y7TMfNY+j7U1N+CsuOnwRWbaubkXl0JQydKZHvQC3tsYEQNB0RogiBQ464KaITloMIrVc6biIJKdFLc9DnM2eIcbEEZbDx5Fj46UwWueXhkEPiriz+DueoSb8hlcRNHiPTSlE8ktj0OxoZaHHaRgCiXQEbneXwfpmB1DSZFcm+70Pl3vnoC206fh+2W86DNKISSH0/C5Rs3oTXOuxSuFcfsXvCkBaW1ElvEK77eufoukgzgjoAEZxA10ah2XnqLwnKni/MGcJfXnzgDx61XoejfJ+D6bRuYyrfzJ3FfeFLB6nqJrmktOrYyvftysn03Eeo8ijegA9lzmuOuNCiCVWbEw9XSYqj/9huwVVcBRQs8084W5w3gsVn7kwXOXrsOa346DTdsNhiwaRdo+ascv1rvJeMTME2MXpm4Mgu+HdFf3z1HQAkc30dK5ZFw4S8ZHNpZ+NGOOlnc8QhVgja9EAq+/wluNTRAlxWbQVv0AE+BfgBStOjQyhS97k8Qg3r+H2k62DncVUdooXNKA8OZNX8O3Kmrk7giqq0Mdn53C5ab6yGy3Ox0cfUSbzp5zv4S41fovqqL8ENNLT9G+lfovZpQfwu8Ev1yotZmsr5rsyB67aPw0WOxEjCCcR+kFMGhKT+LXltSJJFFfFBxCyauvA79c2thwPSr3H3nVjhdXD2BXeeq4XP5reOKoG2wfumXm/Dh2Spojg00a+oJqK/R4FkpFVFrMhnBUyPZczMErIQ+G0fQ6EoDI6Am/x2JTTt+ByaUCfB+02uhP6of5aiwmXg8nCzOnwCe9de/+g6mHvwe89XgthSboj9k6z+Ej89WQ+zmT+0vtDN16GTixyeyfAyLxAb6rsmCKBR54YR4djYujOFOc2DKz8hxZVYaU8eG4Efn1enApJhpdtG4Xf7uuxdXO0tHhSRr+k8JbE6/RrlBo9fOAM/WzTy1djHemVHlmdBY8aVj4IfECHYmlsCpiXAgPxMbyq7t3MbhKZ5bcQ1BrQYhOEJHG2qhM8+DSxHubiMIAqMnwZ+GAZZ2nB8xY92gFkvKwfJZHGQP98jRuj4Zlhe5egwIZXKnBvqsHs3eeSlBh7bEhoElLgwqH02T6AA78MwTqHOJJpT8Zv/rLhAHOEMDes3ZGFWy869g+zIY5v+tc77Wc8pAc59VYyBi1WhmbCJi1ShG9YPDooDDS11ZMFviA4ycfxX6TrXahaAO40bymXvoLpiH1dQtE8B2oDezHQiGzbO7b9NC5qVa+qwaDc4UsXIUe2JWKrP0D2GnUZYBoXDzyCEOf/xCA0QhFIngVN60asB/1nFotniDU7im1HbpStj28SiE74XwvVjDgSA4tcnfooWvHMn6rERgVATXKJ5TnXKq7cjsyxs4jQ2ol3ffj7chEoG43pKOIlDhxpqxboWQ3Cpou2CPU1BnGrFmOpw29wPb/kBm29+Le8OBQLj8sb9ViygbBeFlCIt+L6UWZMDpfsHsVExvxukxivfdhD4IrqRgHWpOct6szANmngTvOYcgdNVeCFq3E1ov3witcad7lS6C9PIZbOrm52DvrqFAsLb9Aaxhf09o2B/IxzxH18LKRrBwhHTUSAhfgcI8bMUIForKfzYOTsUE6w0U7b2hwxkV0cS48Zyq0WepIFA7rFKA0IGeNA+2L/zxCaBjroUUpltDVwxnYQSMopw8rHQEH1M9tHQ4G1CcAUfjQ/FHWiVfaNu39RDxZg2Ev3mFO4FwN+aNXF0bTjVDfS8eRx62qxyKYG1fmLARfxz7ywYwxxp3kfOaFjg32UKQpBAE1cHRlahOmjIpHm4cPsjXqrLe4UBCAs65Gs/dfe2x6gb+maz2Kw7VgHAEaJcfo5q97sdIJzd0s2jdX4jeGloyAndZwIaWDHfIQ0oyGInX8brDm5bxxShySq5CGAKEIZTwh1favFr5aQB3Ts1AuB4I6iiEBdvnvghNwlyO9xR4mzWfsaF5Ak7A8mbkmBS8PB0bIM9gpLF5mXI5gK1HbkHoG1cgFEG4MCcoXruP1HVbj9TLTwNoODQQAbvjbhMgeXeCJlg+Fi6F9fkveuRrHgO75RAkB12eASTezHIlURMS44PVR+WSAOOX10EIgigRVMgbP+ugxjnHa67gvVflp+DxubRRgUp1Q+CuKPLu0MBrNMb8C6Exg90zNdeWbp4cblkG9F6WxpsI5jk2hW4U1eia1PXjoe7Wdb5wZc0dGDrXCsEITeDBfxduz6/oNbpG1Ya+a4VKfI8o6uqv4+7HEqwA/WcXnpM3GJ2rq5zvwkzerib+c9p3cn9z8LJ0CZoOvZemITyOl6qaqPOxrM36spgvTkFNZONuEtxdkg0YNQ6vpXtU1J7As8+hCM6HcX3ehWqGsQ820QUbFPUjJR0rODyFZ6rfpN4IphS0ZBizj9Mc6nxuiagtOlwuEURsOVwPQ+bUQBBC9kYpVxq3rBa2GM48xeajpVBjpuOhAxvkjdDGsVADaly6+3iJr2nN3N08A/NSrL0QjsQBJSR5kBTNkRtr9CToCBjjWFUD7P7hFhTs/gUW7fkFG7vpsOMUdfXXYNaBYti4IwShOtMuo3vL3BshKVfqjOPOYPusEyPRnH58VHiNCshVUEHFCFs8lAUVD8MchbVAOQ4sQpfjXnI+ac1TbPPxXRLt/vF11XeQVP4USypJRFgEU/qsIwKi9HEnLgmP6kANQOnrbcsktj3oKQTMS65RYL2KUOQ8H+owJmh9THNynFz+NMzaX8wBz9ddlLjAc6oVHFoNMSuyxL1435nd+K2ig3VEJxlyM+UOc1x+3s0cd19F+5EBubjDfIGeRalMB+euJMY9F9M8fyJ6TvXAxUJUUy7mjbUh7LV10QjjhceBwLwIVECa28uc5OXoODctxz1X4joP3ymxFQpCScEHLk6VMs43Hhtr6vpUCCgcwuEpjy5OhjOf4ssooTigmSC9sCbcZvZkvGZuj2MU+sn17U5LzHuHm5e7yf/dRGvPwlRQokWNTjDCU5gCIxdK4XNKjcc9C4dA3oZghGuPsATmyW6bPXBM8pQ1D0Z+e187XiNd/qCd1XSvo9M42g7wyfFflMJIalEhzBehk3AcgG6/RszRWK+jU268b/DSeAllhxO5hwT2AJvubRnm3DPjm2dJvAcLr+EB02lxZ/IvSNYh9XpByl3XKZnwerqHtGEL/lQmMAVobofgwgVsG4RuS00JYT41+5HpEuvhwnO4KZeDoQSEcJICMy3EvICaSuHS5+VYOWlsKf5bSHAGNZgJ1rFm29ea8fq+NjBtfPOmX9r7Ravwjll+7wy2IqgO4r8wBXosTEL4JEa5qvnjNVQn0ZjuMY7PfIIvJcIRmKNao1phvTXc3tuS2VCXd7SyZqe75UiM3xZu7d1N3afFWjhgPoLnS8cxh8S8R34iSszp0ucT2SurwgUcB20FBMnBRU343pbk8M0y9wqTt8uDvbAPEx4ZPXIVmB9CmfKTOKhfHuXCVd4jT8yR4hfH4e7jtwuBClgpdx3atvcRdnl7C+vUbLdfd94fNOhpdHiidxmBEqRRvvMTeAO+eQl8DnNeX/4+/huIgAhM0EJ7HtHzy9ub10zNds31bO3iKZf544MaadPfJ6fLqzEVBM6BFyTqErVEGFQYR/B2EfieFgwFexY0N7/4Z9dJ/1dwZ0HN0MvumRWQ1+n5CHPXtwZYqInu8waz9zZ2wx12s55Y62bZNMNt67znXfPGpbuM/32gNe1/bX9Txf8bcaIAAAAASUVORK5CYII=" InformativeScreenshot="17d1896579d08e6a4e91664082cc2537.jpg" Reference="pN9ec2FstECmmZwUooDDWw/A2IsXlRlIkGCbFHPbUtRWg" Selector="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" Title="Amazon.com. Spend less. Smile more." Url="https://www.amazon.com/" Version="V1" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+        <uix:NApplicationCard x:Key="Christmas" AttachMode="ByInstance" DisplayName="Chrome Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="450,3784.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" InteractionMode="DebuggerApi" ScopeGuid="61a493aa-fe91-40cd-957f-704d18451768" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,3566" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_39" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4efdd64e-5c6e-4191-b763-9afc0ff2a832" InformativeScreenshot="3deba8dbe278035f39bdf262b5566b14" Selector="&lt;webctrl parentid='nav-hamburger-menu' tag='I' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:void(0)'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_40" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35739809-be58-4acb-8844-841eb7f4a755" InformativeScreenshot="3a190c3d9b5a26c09f14404f0823c6ef" Selector="&lt;webctrl aaname='Sign in' class='hmenu-item' parentid='hmenu-content' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Email or mobile phone n…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,289.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" Text="9345776153" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/ap/signin" CVScreenId="c58d1c0e-1f1a-43cf-a826-f253a6f493a8" ContentHash="xxLIrtot40KA_t0i9v0T2g" CvElementArea="256, 357, 449, 52" CvType="InputBox" DesignTimeRectangle="259, 360, 445, 47" DesignTimeScaleFactor="1.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ap_email' tag='INPUT' type='email' class='a-input-text a-span12 auth-autofocus auth-required-field auth-require-claim-validation' aaname='               Email or mobile phone number             ' /&gt;" Guid="121de20e-90b9-4eb4-b0af-0db370b53d49" InformativeScreenshot="4b76ba63624ac7a3767ef924c5ad687b.png" IsResponsive="True" Reference="pN9ec2FstECmmZwUooDDWw/KlCY7UxgpkWHPUdPr1GLbg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="c58d1c0e-1f1a-43cf-a826-f253a6f493a8" CvTextArea="261, 331, 288, 21" CvTextArgument="Email or mobile phone number" CvType="Text" DesignTimeRectangle="259, 329, 445, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='a-form-label' aaname='               Email or mobile phone number             ' check:innerText='Email or mobile phone number' /&gt;" Guid="74befdca-5d1c-4285-901a-5722ea6b7795" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  continue'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_41" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5b6f08c6-a8a9-4357-90dc-f0f9290f2751" InformativeScreenshot="8899181f436c2f574f939ad15c0a5fb4" Selector="&lt;webctrl id='continue' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  ap_password'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_42" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="898df825-3c4c-48cb-92dc-3418bc57f84c" InformativeScreenshot="4d96127f1ed1cdcfcc28f1bac077c46e" Selector="&lt;webctrl id='ap_password' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  ap_password'" sap:VirtualizedContainerService.HintSize="382,188.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_9" Text="Kavin@200424">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1edec68a-bd5a-42b4-b5cb-5ed5928c1dc2" InformativeScreenshot="485b4490041382c0ed8674af9799592d" Selector="&lt;webctrl id='ap_password' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  ap_email'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_43" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d45a625c-f065-47bc-b08a-0c0e14ece6c0" InformativeScreenshot="4e9b4f6c9a6308dfb5722afda2eff776" Selector="&lt;webctrl id='signInSubmit' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT signInSubmit'" sap:VirtualizedContainerService.HintSize="382,228" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/ap/signin" CVScreenId="9f5260dd-a671-4b60-bfd5-d08088fb08f3" ContentHash="dXLTeSzvj064gKUx4YzoPg" CvElementArea="734, 618, 449, 50" CvTextArea="927, 632, 63, 24" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="737, 621, 443, 43" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='signInSubmit' tag='INPUT' type='submit' class='a-button-input' aaname='' /&gt;" Guid="b7e64e4a-9074-4e26-9841-b53ebeed0acf" InformativeScreenshot="9799d179321650635a288aa34eb57e25.png" Reference="pN9ec2FstECmmZwUooDDWw/NdCeUVbTW0i44zyV3KC-tQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  twotabsearchtext...'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_44" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5969098-15f2-4535-bd34-4495e83cb98b" InformativeScreenshot="1a71b433e62bcd07b7bc48e7809d4cba" Selector="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  twotabsearchtext...'" sap:VirtualizedContainerService.HintSize="382,188.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="Blue Jean for men">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d445431e-5b08-4c79-9308-d803b18201e8" InformativeScreenshot="88da1d1abfb4e150ba9336802d265827" Selector="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="382,170.66666666666666" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="enter" KeyModifiers="Ctrl" SpecialKey="True">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="181d4836-ac78-4ceb-a7e1-4fed30addb40">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,178" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;login successful&quot;]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,178" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;shirt was selected&quot;]" />
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_45" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1b5eb3f2-facb-47e8-be0b-26f5b23bcd9b" InformativeScreenshot="31479ebc8610e850ebee802617afdd67" Selector="&lt;webctrl parentid='search' tag='IMG' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_46" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8051c680-bc32-4166-a655-9b2f30da5d48" InformativeScreenshot="f457d13d1beaea16339af77ffa1fdc1c" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;span' parentid='dropdown_selected_size_name' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  native_dropdown_sele...'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_47" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1e95c691-22c2-41c3-8283-84c9890a5902" InformativeScreenshot="e2a7440f8d1cdd466df2a3ca0a0ddf1b" Selector="&lt;webctrl id='native_dropdown_selected_size_name_59' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  add-to-cart-butt...'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_48" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7017f7bf-30e0-4e78-906b-efcf6483cef3" InformativeScreenshot="936d5b70da6345e2a91dfb7aabe7f61f" Selector="&lt;webctrl id='add-to-cart-button' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_49" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="993c5fe2-6b3a-40a4-98c9-1537f4bcaaa9" InformativeScreenshot="f052847d1d79b106364ff28f71b5b1b6" Selector="&lt;webctrl aria-labelledby='sc-buy-box-ptc-button-announce' tag='INPUT' type='submit' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <uix:NGetText DisplayName="Get Text 'P.when(client-side-met…'" sap:VirtualizedContainerService.HintSize="382,190.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" TextString="[a]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/gp/buy/kyc/xborder/handlers/display.html" ContentHash="3MLLZGXP7EGTdwYQT3YqPg" DesignTimeRectangle="96, 231, 1725, 1665" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl type='' parentid='a-page' tag='DIV' class='a-container page-container' aaname='            ' /&gt;" Guid="72f0965b-4f29-407a-a799-a85947f80e55" InformativeScreenshot="7853516f8958e5f0bf42d324cefd0de7.png" Reference="pN9ec2FstECmmZwUooDDWw/uUkKDuziykOJ4JfQ4sNd1Q" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01e5ncglxyL.css,01lF2n-pPaL.css,519YvOBDG8L.css,31uBZQYbDJL.css,01e7yyFT0mL.css,11hEAfyy4tL.css,01qPl4hxayL.css,01pOTCa2wPL.css,413Vvv3GONL.css,11TIuySqr6L.css,01Rw4F+QU6L.css,11JJsNcqOIL.css,01J3raiFJr*' title='Amazon.com Checkout' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,178" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;move out of cart&quot;]" />
+                <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Your Diwali shopping list is moved to the cart.please place your order" DisplayName="Send SMTP Mail Message" Email="220701122@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382,180.66666666666666" sap2010:WorkflowViewState.IdRef="SendMail_5" IgnoreCRL="False" IsBodyHtml="False" Password="fdxb pzwb vlmo zuww" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Your Diwali shopping list was moved to the cart" To="220701122@rajalakshmi.edu.in">
+                  <ui:SendMail.Files>
+                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                  </ui:SendMail.Files>
+                </ui:SendMail>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="_UrIh6TTUk2jVw7zLbjm7w" IconBase64="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" InformativeScreenshot="17d1896579d08e6a4e91664082cc2537.jpg" Reference="pN9ec2FstECmmZwUooDDWw/A2IsXlRlIkGCbFHPbUtRWg" Selector="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" Title="Amazon.com. Spend less. Smile more." Url="https://www.amazon.com/" Version="V1" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Switch>
+    </Sequence>
+  </Sequence>
+</Activity>
